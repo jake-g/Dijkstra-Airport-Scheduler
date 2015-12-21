@@ -1,0 +1,64 @@
+Initial vertex min w/ cost infinity
+Initialize unknown set
+initialize known set
+initialize costTracker Map
+Method(curr) {
+    unknowns.add(curr);
+    for vert in curr.adjacentVertices{
+        cost = costSum(curr)
+        if(!costTracker.contains(curr)) {
+            costTracker.put(vert, cost
+        }
+        else{
+            if(costTracker.get(vert) > cost) {
+                costTracker.put(vert, cost
+            }
+        }
+
+        if edgeCost(curr,Vert) < min {
+            min = edgeCost(curr, vert);
+        }
+    }
+    unknown.remove(curr);
+    known.add(curr);
+    min.last = curr
+    method(min);
+
+}
+
+--helper methods--
+private int costSum(vert) {
+   int cost = edgeCost(vert.last, vert)
+   if vert.last == null {   // base case, when we reach start point
+    return costTotal
+   }
+   costTotal += costSum(vert.last)
+}
+
+
+// build the path stack (initilize new stack first)
+Stack revPath = new Stack
+Stack pathTraversal(end) {
+    if vert.last == null {   // base case, when we reach start point
+        return revPath
+       }
+
+    revPath.push = pathTraversal(end.last)
+ }
+
+ // Build Path structure (initilize Path class first)
+ list vertcies = new list
+ private list buildPath(Stack revPath)
+    for i = 0 to size(stack) {
+        list(i) = revPath.pop
+    }
+    return list
+
+
+ Shortest Path Method........................................................................................
+ public Path shortestPath(Vertex a, Vertex b) {
+     Path motherfuckinshortestpath = new path
+     Method(a)
+     motherfuckinshortestpath.cost = costSum(b)
+     motherfuckinshortestpath.path = buildPath(revPath(b))
+
